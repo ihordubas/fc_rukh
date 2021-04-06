@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Адміністратор футбольного клубу "Рух"</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="storage.js"></script>
+    <script src="addNews.js"></script>
+</head>
+<body>
+    <header>
+        <nav> 
+            <label for="toggle">&#9776;</label>
+            <input type="checkbox" id="toggle"/>
+            <div class="menu">
+                <ul>
+                    <li><a class="active" href="mainpage.html">Головна</a></li>
+                    <div class="dropdown">
+                        <li class="dropbtn"><a href="#">Матчі</a></li>
+                        <div class="dropdown-content">
+                            <li><a href="matches.html">Календар матчів</a></li>
+                            <li><a href="#">Наступні матчі</a></li>
+                            <li><a href="#">Очки</a></li>
+                        </div>
+                    </div>
+                    <li><a href="news.html">Новини</a></li>
+                    <li><a href="fans.html">Фанати</a></li>
+                    <li><a href="contacts.html">Контакти</a></li>
+                    <li><a href="#">Адміністратор</a></li>
+                    <li class="logo-container">
+                        <img class="logo" src="img/logo.png" alt="">
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section>
+        <div class="section-header">
+            <h1>Додати новину</h1>
+        </div>
+            <div class="add-img">
+                <input class="input-file" id="img" type="file">
+                <button class="add-button">Додати зображення</button>
+            </div>
+            <div>
+                <div class="add-text">
+                    <div class="inputs">
+                        <input type="text" id="title" placeholder="Введіть заголовок">
+                        <textarea id="text"  placeholder="Введіть текст" cols="30" rows="10"></textarea>
+                    </div>
+                    
+                    <div>
+                        <button class="add-button" onclick="addNews()">Додати новину</button>
+                    </div>
+
+                </div>
+            </div>
+        
+    </section>
+
+    <footer>
+        <p>© 2020 Усі права застережено. Футбольний клуб «Рух»</p>
+    </footer>
+</body>
+</html>

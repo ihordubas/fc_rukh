@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Фанати футбольного клубу "Рух"</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="storage.js"></script>
+    <script src="addComment.js"></script>
+</head>
+<body>
+    <header>
+        <nav> 
+            <label for="toggle">&#9776;</label>
+            <input type="checkbox" id="toggle"/>
+            <div class="menu">
+                <ul>
+                    <li><a class="active" href="mainpage.html">Головна</a></li>
+                    <div class="dropdown">
+                        <li class="dropbtn"><a href="#">Матчі</a></li>
+                        <div class="dropdown-content">
+                            <li><a href="matches.html">Календар матчів</a></li>
+                            <li><a href="#">Наступні матчі</a></li>
+                            <li><a href="#">Очки</a></li>
+                        </div>
+                    </div>
+                    <li><a href="news.html">Новини</a></li>
+                    <li><a href="#">Фанати</a></li>
+                    <li><a href="contacts.html">Контакти</a></li>
+                    <li><a href="admin.html">Адміністратор</a></li>
+                    <li class="logo-container">
+                        <img class="logo" src="img/logo.png" alt="">
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section>
+        <div class="section-header">
+            <h1>Відгуки фанатів</h1>
+        </div>
+        <div class="section-text">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure laboriosam illum nobis 
+                sint rerum repellat om nis face re ea assumenda corrupti? Hic amet facere incidunt, quia 
+                quos omnis error necessitatibus? Iure provi dent dis tin ctio adipisci quas sapiente a,
+                consequuntur cumque quisquam reiciendis?
+            </p>
+            <div class="info-appeal">
+                <p class="date-appeal">12-08-2019 16:32</p>
+                <p class="name-fan">Ігор Дубас</p>
+            </div>
+        </div><hr>
+
+        <div class="section-text">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure laboriosam illum nobis 
+                sint rerum repellat om nis face re ea assumenda corrupti? Hic amet facere incidunt, quia 
+                quos omnis error necessitatibus? Iure provi dent dis tin ctio adipisci quas sapiente a,
+                consequuntur cumque quisquam reiciendis?
+            </p>
+            <div class="info-appeal">
+                <p class="date-appeal">25-10-2019 09:29</p>
+                <p class="name-fan">Ігор Дубас</p>
+            </div>
+        </div><hr>
+
+        <div class="section-text">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure laboriosam illum nobis 
+                sint rerum repellat om nis face re ea assumenda corrupti? Hic amet facere incidunt, quia 
+                quos omnis error necessitatibus? Iure provi dent dis tin ctio adipisci quas sapiente a,
+                consequuntur cumque quisquam reiciendis?
+            </p>
+            <div class="info-appeal">
+                <p class="date-appeal">02-04-2020 22:12</p>
+                <p class="name-fan">Ігор Дубас</p>
+            </div>
+        </div><hr>
+        <div id="new-appeal"></div>
+    </section>
+
+    <section class="appeal-input">
+        <textarea name="" id="appeal" cols="30" rows="10" placeholder="Напишіть, що ви думаєте про нашу команду"></textarea>
+        <button class="add-button" onclick="addComment()">Відправити</button>
+    </section>
+
+    <footer>
+        <p>© 2020 Усі права застережено. Футбольний клуб «Рух»</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        let naturalNumber = prompt("Введіть натуральне число", "");
+        let n =+naturalNumber;
+
+        function isPrime(num) {
+            // Function checks if number is prime
+            if (num % 2 == 0){
+                // Для перевірки чи парне число є 2
+                return num == 2
+            }
+            let d = 3;
+            while (num % d != 0){
+                /* Перебираю дільники числа num починаючи з 3, 
+                   якщо число націло ділиться на дільник цикл закінчується  */
+                d+=2;
+            }
+            return num == d 
+        }
+
+        function *primeGenerator(){
+            // Function generates prime numbers 
+            let i = 2;
+            while (true) {
+                if ( isPrime(i) ) {
+                    yield i; 
+                }
+                i+=1
+            }
+        }
+
+        function mersenneNumbers(n){
+            const mersenneArray = [];
+            let generator = primeGenerator();
+            let mersenneNumber = 2 ** generator.next().value - 1;
+            while (mersenneNumber < n){
+                mersenneArray.push(mersenneNumber);
+                mersenneNumber = 2 ** generator.next().value - 1;
+            }
+            return mersenneArray;
+        }
+
+        console.log(mersenneNumbers(n));
+    </script>
+</body>
+</html>

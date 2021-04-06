@@ -1,0 +1,536 @@
+body {
+  margin: 0;
+  background-color: #FFE441;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+section {
+  margin: 50px 0 80px 0;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+label {
+  font-size: 26px;
+  display: none;
+  width: 26px;
+  float: right;
+}
+
+#toggle {
+  display: none;
+}
+
+nav ul {
+  display: flex;
+  justify-content: flex-start;
+  background-color: #000000;
+  height: 100px;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+}
+nav li {
+  font-size: 25px;
+  padding: 32px 25px;
+}
+nav li:hover {
+  background-color: #b29f2d;
+  cursor: pointer;
+  animation: nav-animation;
+  animation-duration: 0.5s;
+}
+nav li a {
+  color: #FFE441;
+  text-decoration: none;
+}
+nav .logo {
+  width: 70px;
+  height: 100px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0 40px;
+  animation: pulsing-logo 1.5s;
+}
+
+@keyframes pulsing-logo {
+  0% {
+    -webkit-transform: scale(0.3, 0.3);
+    transform: scale(0.3, 0.3);
+  }
+  100% {
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+}
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+}
+.dropdown-content li {
+  margin: 0;
+  padding: 30px 0;
+}
+.dropdown-content a {
+  color: black;
+  padding: 6px 8px;
+  text-decoration: none;
+  display: block;
+  font-size: 22px;
+  text-align: center;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover {
+  background-color: #b29f2d;
+}
+
+.section-image {
+  display: flex;
+  justify-content: center;
+}
+.section-image img {
+  padding-top: 100px;
+  width: 60%;
+}
+
+.section-header, .second-header {
+  background-color: #000000;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section-header h1, .second-header h1 {
+  color: #FFE441;
+}
+
+.section-header {
+  margin-top: 150px;
+}
+
+.section-text {
+  width: 70%;
+  margin: 0 auto;
+  font-size: 25px;
+}
+
+.last-victory-card {
+  width: 40%;
+  margin: 0 auto;
+  background-color: #fff;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+.last-victory-card .type-of-game {
+  text-align: center;
+}
+.last-victory-card div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.last-victory-card img {
+  height: 200px;
+  width: 140px;
+}
+.last-victory-card .score {
+  font-size: 50px;
+}
+.last-victory-card .date-game {
+  font-size: 25px;
+  text-align: center;
+}
+
+footer {
+  background-color: #000000;
+  height: 60px;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer p {
+  color: #FFE441;
+  font-size: 18px;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.news-content {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.news-card {
+  width: 300px;
+  height: 400px;
+  margin: 15px;
+  padding: 10px;
+  background-color: #fff;
+  animation: my-animation 1.5s;
+}
+.news-card img {
+  height: 200px;
+  width: 200px;
+  display: block;
+  margin: 0 auto;
+}
+
+.news-card-header {
+  text-align: center;
+}
+
+.news-card .news-card-header {
+  font-size: 18px;
+}
+
+.news-card .news-card-text {
+  font-size: 16px;
+}
+
+@keyframes my-animation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.info-appeal {
+  display: flex;
+  justify-content: space-between;
+}
+
+hr {
+  border: 3px solid #000000;
+}
+
+.appeal-input {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.appeal-input textarea {
+  width: 40%;
+  height: 220px;
+  padding: 30px;
+  font-size: 18px;
+  background-color: #fff6c6;
+}
+
+.add-button {
+  width: 190px;
+  height: 70px;
+  background-color: #000000;
+  color: #FFE441;
+  font-weight: bold;
+  font-size: 25px;
+  margin-left: 40px;
+  border: 0;
+}
+.add-button:hover {
+  cursor: pointer;
+  background-color: #FFE441;
+  color: #000000;
+  border: 2px solid #000000;
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact .contact-info {
+  margin: 30px;
+}
+
+.add-img {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin-top: 100px;
+}
+.add-img button {
+  margin-left: 120px;
+}
+
+.input-file {
+  width: 250px;
+}
+
+.add-text {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+  margin-top: 50px;
+}
+.add-text .inputs {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 50px;
+}
+.add-text input, .add-text textarea {
+  width: 300px;
+  font-size: 18px;
+  padding: 10px;
+}
+.add-text input {
+  margin: 20px;
+  height: 50px;
+}
+.add-text textarea {
+  height: 200px;
+}
+
+section table {
+  text-align: center;
+  margin: auto;
+  border: 1px solid #000000;
+  width: 40%;
+  margin-top: 20px;
+  font-size: 22px;
+}
+section table th {
+  color: #FFE441;
+  background-color: #000000;
+}
+section table tr {
+  height: 70px;
+}
+section table tr:nth-child(even) {
+  background-color: #b29f2d;
+}
+section table td {
+  border: 1px solid #000000;
+}
+
+@keyframes nav-animation {
+  from {
+    background-color: inherit;
+  }
+  to {
+    background-color: #b29f2d;
+  }
+}
+@media screen and (max-width: 1024px) {
+  nav ul li {
+    font-size: 20px;
+    padding: 32px 15px;
+  }
+
+  .logo-container {
+    display: none;
+  }
+
+  .section-image img {
+    width: 80%;
+  }
+
+  .last-victory-card {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 768px) {
+  label {
+    display: block;
+    cursor: pointer;
+    width: 50px;
+    padding: 15px;
+    font-size: 40px;
+  }
+
+  .menu {
+    text-align: center;
+    width: 100%;
+    display: none;
+  }
+
+  nav {
+    height: auto;
+  }
+
+  nav ul {
+    padding: 0;
+    display: block;
+  }
+  nav ul li {
+    background-color: #b29f2d;
+    padding: 20px 30px;
+    color: #000000;
+    border: 1px solid black;
+  }
+  nav ul li:hover {
+    color: #FFE441;
+    background-color: #000000;
+    animation: none;
+  }
+
+  #toggle:checked + .menu {
+    display: block;
+  }
+
+  header a {
+    display: block;
+    text-align: left;
+  }
+
+  .last-victory-card .score {
+    font-size: 35px;
+  }
+  .last-victory-card img {
+    height: 150px;
+    width: 90px;
+  }
+
+  .appeal-input {
+    flex-wrap: wrap;
+  }
+  .appeal-input textarea {
+    width: 70%;
+    height: 100px;
+    padding: 15px;
+  }
+  .appeal-input .add-button {
+    margin-top: 20px;
+  }
+
+  .add-img {
+    flex-wrap: wrap;
+  }
+  .add-img .add-button {
+    margin: 20px 0 0 0;
+  }
+
+  .add-text {
+    margin: 20px;
+  }
+
+  .inputs {
+    display: flex;
+    justify-content: center;
+  }
+  .inputs textarea, .inputs input {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .section-header, .second-header {
+    height: 100px;
+  }
+
+  section {
+    margin: 30px 0;
+  }
+
+  .section-header {
+    margin-top: 120px;
+  }
+
+  .section-text {
+    width: 90%;
+    font-size: 16px;
+  }
+
+  .last-victory-card {
+    width: 85%;
+  }
+  .last-victory-card .date-game {
+    font-size: 18px;
+  }
+  .last-victory-card .score {
+    font-size: 30px;
+  }
+
+  .appeal-input {
+    flex-wrap: wrap;
+  }
+  .appeal-input textarea {
+    width: 70%;
+    height: 100px;
+    padding: 15px;
+  }
+  .appeal-input .add-button {
+    margin-top: 20px;
+  }
+
+  .add-button {
+    width: 160px;
+    height: 60px;
+    font-size: 18px;
+  }
+
+  footer {
+    position: static;
+  }
+
+  .add-text, .inputs {
+    margin-top: 0;
+  }
+
+  .add-text {
+    flex-wrap: wrap;
+  }
+  .add-text .add-button {
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .section-header, .second-header {
+    font-size: 14px;
+    height: 60px;
+  }
+
+  .section-header {
+    margin-top: 110px;
+  }
+
+  .last-victory-card img {
+    height: 80px;
+    width: 50px;
+  }
+  .last-victory-card .type-of-game {
+    margin: 10px;
+  }
+  .last-victory-card .score {
+    font-size: 25px;
+  }
+
+  .add-button {
+    margin-left: 0;
+  }
+
+  .add-button {
+    margin-top: 20px;
+  }
+
+  .inputs input {
+    height: 40px;
+  }
+  .inputs textarea {
+    height: 100px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
