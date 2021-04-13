@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap");
 body {
   margin: 0;
   background-color: #FFE441;
@@ -12,6 +13,7 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
+  font-family: "Oswald", sans-serif;
 }
 
 label {
@@ -33,10 +35,11 @@ nav ul {
   align-items: center;
   list-style: none;
   margin: 0;
+  font-family: "Oswald", sans-serif;
 }
 nav li {
   font-size: 25px;
-  padding: 32px 25px;
+  padding: 32px 28px;
 }
 nav li:hover {
   background-color: #b29f2d;
@@ -49,7 +52,7 @@ nav li a {
   text-decoration: none;
 }
 nav .logo {
-  width: 70px;
+  width: 250px;
   height: 100px;
   position: absolute;
   top: 0;
@@ -116,6 +119,7 @@ nav .logo {
 }
 .section-header h1, .second-header h1 {
   color: #FFE441;
+  font-size: 25px;
 }
 
 .section-header {
@@ -131,10 +135,12 @@ nav .logo {
 .last-victory-card {
   width: 40%;
   margin: 0 auto;
-  background-color: #fff;
+  background: #ffe441;
+  background: linear-gradient(90deg, #ffe441 0%, black 50%, #ffe441 100%);
   margin-top: 20px;
   margin-bottom: 20px;
   padding: 20px;
+  color: white;
 }
 .last-victory-card .type-of-game {
   text-align: center;
@@ -180,7 +186,7 @@ footer p {
 }
 
 .news-card {
-  width: 300px;
+  width: 320px;
   height: 400px;
   margin: 15px;
   padding: 10px;
@@ -193,17 +199,26 @@ footer p {
   display: block;
   margin: 0 auto;
 }
-
-.news-card-header {
-  text-align: center;
+.news-card .hover-animation figure img {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
-
+.news-card .hover-animation figure:hover img {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
 .news-card .news-card-header {
   font-size: 18px;
 }
-
 .news-card .news-card-text {
   font-size: 16px;
+}
+
+.news-card:hover {
+  cursor: pointer;
+  box-shadow: 0 0 30px rgba(33, 33, 33, 0.2);
 }
 
 @keyframes my-animation {
@@ -214,6 +229,10 @@ footer p {
     opacity: 1;
   }
 }
+.comments {
+  font-family: "Oswald", sans-serif;
+}
+
 .info-appeal {
   display: flex;
   justify-content: space-between;
@@ -260,6 +279,10 @@ hr {
 }
 .contact .contact-info {
   margin: 30px;
+}
+
+.map {
+  margin-top: 100px;
 }
 
 .add-img {
@@ -332,6 +355,12 @@ section table td {
   }
   to {
     background-color: #b29f2d;
+  }
+}
+@media screen and (max-width: 1120px) {
+  nav .logo {
+    width: 180px;
+    margin-right: 15px;
   }
 }
 @media screen and (max-width: 1024px) {
