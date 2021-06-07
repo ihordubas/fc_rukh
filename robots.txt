@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /img/
+Sitemap: https://fc-rukh-lviv.netlify.app/
